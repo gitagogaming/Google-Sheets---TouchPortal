@@ -1,0 +1,169 @@
+{
+    "sdk": 6,
+    "version": 100,
+    "name": "Google_Sheets",
+    "id": "gitago.gsheets",
+    "settings": [
+        {
+            "name": "Debug",
+            "default": "False",
+            "type": "text"
+        }
+    ],
+    "categories": [
+        {
+            "id": "gitago.gsheets.main",
+            "name": "Google Sheets Main Category",
+            "actions": [
+                {
+                    "id": "gitago.gsheets.act.sync_sheets",
+                    "name": "Sync the Google Sheet",
+                    "prefix": "Prefix",
+                    "type": "communicate",
+                    "tryInline": true,
+                    "format": "Load the config {$gitago.gsheets.act.sync_sheets.config$} and load values to category named {$gitago.gsheets.act.sync_sheets.config_name$}",
+                    "data": [
+                        {
+                            "id": "gitago.gsheets.act.sync_sheets.config",
+                            "type": "file",
+                            "label": "link to config file"
+                        },
+                        {
+                            "id": "gitago.gsheets.act.sync_sheets.config_name",
+                            "type": "text",
+                            "label": "Name of Config, for making state category",
+                            "default": "GS | Config 1"
+                        }
+                    ]
+                },
+                {
+                    "id": "gitago.gsheets.act.update_cell",
+                    "name": "Update a Google Sheet Cell",
+                    "prefix": "Prefix",
+                    "type": "communicate",
+                    "tryInline": true,
+                    "description": "Update a cell in the Google Sheet.  Example: Update A1 to Hello World",
+                    "format": "Update {$gitago.gsheets.act.update_cell.cell$} to {$gitago.gsheets.act.update_cell.value$}",
+                    "data": [
+                        {
+                            "id": "gitago.gsheets.act.update_cell.cell",
+                            "type": "text",
+                            "label": "The Cell to Update",
+                            "default": "A1"
+                        },
+                        {
+                            "id": "gitago.gsheets.act.update_cell.value",
+                            "type": "text",
+                            "label": "The value we want to update the cell to",
+                            "default": "Hello World"
+                        }
+                    ]
+                },
+                {
+                    "id": "gitago.gsheets.act.update_cell.smart",
+                    "name": "Update a Google Sheet Cell (Smart)",
+                    "prefix": "Prefix",
+                    "type": "communicate",
+                    "tryInline": true,
+                    "description": "(Smart) Update a cell in the Google Sheet.  Example: Update A1 to Hello World",
+                    "format": "Update {$gitago.gsheets.act.swap_cell.fromcell.smart$} to {$gitago.gsheets.act.update_cell.value.smart$}",
+                    "data": [
+                        {
+                            "id": "gitago.gsheets.act.swap_cell.fromcell.smart",
+                            "type": "choice",
+                            "label": "The Cell to Update",
+                            "default": "",
+                            "valueChoices": []
+                        },
+                        {
+                            "id": "gitago.gsheets.act.update_cell.value.smart",
+                            "type": "text",
+                            "label": "The value we want to update the cell to",
+                            "default": "Hello World"
+                        }
+                    ]
+                },
+                {
+                    "id": "gitago.gsheets.act.swap_cell",
+                    "name": "Copy one Cell to another Cell",
+                    "prefix": "Prefix",
+                    "type": "communicate",
+                    "tryInline": true,
+                    "description": "Swap Values between two cells  Example: Swap A1 and B2",
+                    "format": "Swap {$gitago.gsheets.act.swap_cell.fromcell$} to {$gitago.gsheets.act.swap_cell.tocell$}",
+                    "data": [
+                        {
+                            "id": "gitago.gsheets.act.swap_cell.fromcell",
+                            "type": "text",
+                            "label": "The Cell to Update",
+                            "default": "A1"
+                        },
+                        {
+                            "id": "gitago.gsheets.act.swap_cell.tocell",
+                            "type": "text",
+                            "label": "The value we want to update the cell to",
+                            "default": "B2"
+                        }
+                    ]
+                },
+                {
+                    "id": "gitago.gsheets.act.auto_update",
+                    "name": "Google Sheets Auto Update Toggle",
+                    "prefix": "Prefix",
+                    "type": "communicate",
+                    "tryInline": true,
+                    "description": "Toggle Auto Update",
+                    "format": "Auto-Update{$gitago.gsheets.act.auto_update.choice$}",
+                    "data": [
+                        {
+                            "id": "gitago.gsheets.act.auto_update.choice",
+                            "type": "choice",
+                            "label": "Toggle the Auto Update",
+                            "valueChoices": [
+                                "ON",
+                                "OFF"
+                              ],
+                            "default": "OFF"
+                        }
+                    ]
+                },
+                {
+                    "id": "gitago.gsheets.act.swap_cell.smart",
+                    "name": "Copy one Cell to another Cell (Smart)",
+                    "prefix": "Prefix",
+                    "type": "communicate",
+                    "tryInline": true,
+                    "description": "(SMART) Swap Values between two cells  Example: Swap A1 and B2",
+                    "format": "Swap {$gitago.gsheets.act.swap_cell.fromcell.smart$} to {$gitago.gsheets.act.swap_cell.tocell.smart$}",
+                    "data": [
+                        {
+                            "id": "gitago.gsheets.act.swap_cell.fromcell.smart",
+                            "type": "choice",
+                            "label": "The Cell to Update",
+                            "default": "",
+                            "valueChoices":[]
+                        },
+                        {
+                            "id": "gitago.gsheets.act.swap_cell.tocell.smart",
+                            "type": "choice",
+                            "label": "The value we want to update the cell to",
+                            "default": "",
+                            "valueChoices":[]
+                        }
+                    ]
+                }
+
+            ],
+            "states": [
+            {
+
+            }
+            ]
+        }
+    ],
+    "configuration": {
+        "colorDark": "#222423",
+        "colorLight": "#000000"
+    },
+    "plugin_start_cmd": "%TP_PLUGIN_FOLDER%Google_Sheets\\TP_GSheets.exe"
+}
