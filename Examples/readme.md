@@ -4,15 +4,15 @@
 ## Sample Leaderboard Google Sheet
 ![image](https://user-images.githubusercontent.com/76603653/227666672-8e476636-2993-40f1-9b6a-ac979526ca4b.png)
 Copy this and use as your own. - https://docs.google.com/spreadsheets/d/18qDz-0B0negMaXONQr1wtnc0prk1Eop3bBdygJsWaRw/edit#gid=1710931458
-
-Sample Scoreboard - Production
+ <br><br>
+##Sample Scoreboard - Production
 ![image](https://user-images.githubusercontent.com/76603653/227666898-c8aea73a-ff4f-4a82-a48f-7c578b4c7f87.png)
 This is the the scoreboard tob e used with the Example Config Below
 
-
+ <br><br>
 ## Example Config
 Please be sure to mimic the format used in the example config.  
-
+ <br><br>
 ## Sample Page
 ![image](https://user-images.githubusercontent.com/76603653/226514197-a6a1bbd4-9aab-47b5-a9f2-d53908b751da.png)
 
