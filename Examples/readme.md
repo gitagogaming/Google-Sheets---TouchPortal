@@ -2,10 +2,10 @@
 
 
 ## Sample Leaderboard Google Sheet
-![image](https://user-images.githubusercontent.com/76603653/227666672-8e476636-2993-40f1-9b6a-ac979526ca4b.png)
+![image](https://user-images.githubusercontent.com/76603653/227666672-8e476636-2993-40f1-9b6a-ac979526ca4b.png) <br><br>
 Copy this and use as your own. - https://docs.google.com/spreadsheets/d/18qDz-0B0negMaXONQr1wtnc0prk1Eop3bBdygJsWaRw/edit#gid=1710931458
  <br><br>
-##Sample Scoreboard - Production
+## Sample Scoreboard - Production
 ![image](https://user-images.githubusercontent.com/76603653/227666898-c8aea73a-ff4f-4a82-a48f-7c578b4c7f87.png)
 This is the the scoreboard tob e used with the Example Config Below
 
