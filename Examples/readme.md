@@ -10,12 +10,14 @@ Copy this and use as your own. - https://docs.google.com/spreadsheets/d/18qDz-0B
 This is the the scoreboard tob e used with the Example Config Below
 
  <br><br>
-## Example Config
-Please be sure to mimic the format used in the example config.  
- <br><br>
 ## Sample Page
 ![image](https://user-images.githubusercontent.com/76603653/226514197-a6a1bbd4-9aab-47b5-a9f2-d53908b751da.png)
 
+
+
+ <br><br>
+## Example Config
+Please be sure to mimic the format used in the example config.  
 ```ini
 worksheetName = "Sample_Scoreboard"     ## This is the name of the worksheet within the spreadsheet
 spreadsheetId = "YOUR_SPREADSHEET_ID"   # This is the spreadsheet URL / ID
